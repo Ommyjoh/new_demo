@@ -13,7 +13,7 @@ class Result extends StatelessWidget {
     } else if (resultScore < 230) {
       message = "Your score is " + resultScore.toString() + " ,At least!";
     } else {
-      message = "Your score is " + resultScore.toString() + " ,Good at choice!";
+      message = "Your score is " + resultScore.toString() + " ,Good choice!";
     }
 
     return message;
