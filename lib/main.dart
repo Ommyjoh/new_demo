@@ -68,9 +68,8 @@ class _MyAppState extends State<MyApp> {
     _finalScore += score;
 
     setState(() {
-      _questIndex = _questIndex + 3;
+      _questIndex = _questIndex + 0;
     });
-    print(_questions[_questIndex]);
   }
 
   @override
