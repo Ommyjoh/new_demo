@@ -9,11 +9,11 @@ class Result extends StatelessWidget {
   String get ScoreMessage {
     String message;
     if (resultScore < 180) {
-      message = "Hey, you are bad at choice!";
+      message = "Your score is " + resultScore.toString() + " ,Bad at choices!";
     } else if (resultScore < 230) {
-      message = "At least you have some good choice!";
+      message = "Your score is " + resultScore.toString() + " ,At least!";
     } else {
-      message = "You are good at choice!";
+      message = "Your score is " + resultScore.toString() + " ,Good at choice!";
     }
 
     return message;
@@ -31,11 +31,11 @@ class Result extends StatelessWidget {
           Text(
             ScoreMessage,
             style: TextStyle(
-                color: Colors.blue, fontSize: 30, fontWeight: FontWeight.bold),
+                color: Colors.blue, fontSize: 20, fontWeight: FontWeight.bold),
           ),
           FlatButton(
             onPressed: resertHandler,
-            child: Text('>Restart quiz<', style: TextStyle(fontSize: 20),),
+            child: Text('>Restart quiz<', style: TextStyle(fontSize: 15),),
             textColor: Colors.red,
           )
         ],
